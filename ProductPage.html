@@ -26,31 +26,77 @@
         </nav>
         <br>
         <section>
-            <img src="assets/images/banner_new_year_2024.jpg" alt="Banner2024" width="1950">
+            <img src="assets/images/banner_new_year_2024.jpg" alt="Banner2024" width="1173">
         </section>
         <center>
             <main >
                 <section>
                     <h2>Order Product Form</h2>
+                    <form id="item-list" action="form-processing" method="post">
+                        <fieldset>
+                            <legend>Enter Personal Information</legend>
+                            <label for="firstname">First Name:</label>
+                            <input type="text" id="firstname" name="firstname" placeholder="Ben" required>
+                            <br>
+                            <label for="lastname">Last Name:</label>
+                            <input type="text" id="lastname" name="lastname" placeholder="Bui" required>
+                            <br>
+                            <label for="dob">Date of Birth:</label>
+                            <input type="date" id="dob" name="dob" placeholder="dd/mm/yyyy" required>
+                        </fieldset>
+                        <br>
+                        <fieldset>
+                            <legend>Enter your shipping information</legend>
+                            <label for="address">Adress:</label>
+                            <input type="text" id="address" name="address" placeholder="123 Su Van Hanh street" required>
+                            <br>
+                            <label for="district">District:</label>
+                            <select id="district" name="district">
+                                <option value="">Select your district</option>
+                                <option value="1">District 1</option>
+                                <option value="2">District 2</option>
+                                <option value="3">District 3</option>
+                                <option value="4">District 4</option>
+                                <option value="5">District 5</option>
+                                <option value="6">District 6</option>
+                                <option value="7">District 7</option>
+                                <option value="8">District 8</option>
+                                <option value="9">District 9</option>
+                                <option value="10">District 10</option>
+                                <option value="11">District 11</option>
+                                <option value="12">District 12</option>
+                                <option value="binhthanh">Binh Thanh District</option>
+                            </select>
+                            <br>
+                            <label for="city">City:</label>
+                            <select id="city" name="city">
+                                <option value="">Select your city</option>
+                                <option value="hochiminh">Ho Chi Minh city</option>
+                                <option value="vungtau">Vung Tau city</option>
+                                <option value="binhduong">Binh Duong city</option>
+                                <option value="Thu Duc">Thu Duc city</option>
+                            </select>
+                        </fieldset>
+                        <br>
+                        <fieldset>
+                            <legend>Purchase Options</legend>
+                            <label for="product">Select product(s):</label>
+                            <select id="product" name="product" size="5">
+                                <option value="switch">Nintendo Switch</option>
+                                <option value="ps5">Playstation 5</option>
+                            </select>
+                            <p><strong>Hint:</strong> Use Shift/Ctrl key to select multiple products!</p>
+                        </fieldset>
+                        <br>
+                        <input type="submit" value="Order Now!">
+                        <br>
+                    </form>
                 </section>
-                <form id="item-list" action="form-processing" method="post">
-                    <fieldset width="1000">
-                        <legend>Enter Personal Information</legend>
-                        <label for="firstname">First Name:</label>
-                        <input type="text" id="firstname" name="firstname" placeholder="Ben" required>
-                        <br>
-                        <label for="lastname">Last Name:</label>
-                        <input type="text" id="lastname" name="lastname" placeholder="Bui" required>
-                        <br>
-                        <label for="dob">Date of Birth:</label>
-                        <input type="date" id="dob" name="dob" placeholder="dd/mm/yyyy" required>
-                    </fieldset>
-                    <br>
-                    <fieldset>
-                    </fieldset>
-                </form>
             </main>
         </center>
+        <footer>
+            <h4>© Copyright 2024 by Long Bui @ RMIT Vietnam | Made with ❤️</h4>
+        </footer>
         </center>
 
     </body>
